@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>formulaire création adhérent</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form action="creerAdherent.php" method="get">
+      <h3>formulaire adhérent</h3>
+      <div>
+        <label for="login">login : </label>
+        <input type="text" name="login" placeholder="votre login...">
+      </div>
+      <div>
+        <label for="mdp">mot de passe : </label>
+        <input type="password" name="mdp" placeholder="votre mot de passe...">
+      </div>
+      <div>
+        <label for="nom">nom : </label>
+        <input type="text" name="nom" placeholder="votre nom...">
+      </div>
+      <div>
+        <label for="prenom">prénom : </label>
+        <input type="text" name="prenom" placeholder="votre prénom...">
+      </div>
+      <div>
+        <label for="email">email : </label>
+        <input type="email" name="email" placeholder="votre email...">
+      </div>
+      <div>
+        <label for="telephone">téléphone : </label>
+        <input type="text" name="telephone" placeholder="votre téléphone...">
+      </div>
+      <div>
+        <input type="submit" name="boutonEnvoyer" value="envoyer">
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/* Style futuriste pour l'élément <footer> */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style pour les liens dans le pied de page */
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Style pour les icônes de médias sociaux dans le pied de page */
+.footer-icons {
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}

@@ -1,0 +1,51 @@
+/* Style futuriste pour les éléments <li> */
+li {
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    position: relative;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+li::before {
+    content: "\2022"; /* Utilisation d'un point comme puce */
+    color: #ff6600; /* Couleur de la puce */
+    font-size: 24px;
+    position: absolute;
+    left: -30px; /* Positionnement de la puce par rapport au texte */
+    transition: all 0.3s ease;
+}
+
+li:hover::before {
+    transform: scale(2.5); /* Effet d'agrandissement de la puce au survol */
+}
+
+/* Effet de couleur au survol */
+li:hover {
+    color: #ff6600;
+}
+
+/* Style pour les éléments actifs */
+li.active::before {
+    transform: scale(1.5);
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+a.supprimer:hover{
+    text-decoration: none;
+    color: crimson;
+}
+
+a.detailler:hover{
+    text-decoration: none;
+    color: green;
+}

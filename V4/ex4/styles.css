@@ -1,0 +1,30 @@
+form {
+  padding:0px 0px 20px 0px;
+  width:80%;
+  margin:20px auto;
+  border:solid 1px lightgrey;
+  border-radius:4px;
+  box-shadow:4px 4px 4px grey;
+}
+
+form div {
+  width:70%;
+  margin:10px auto;
+  display:flex;
+  justify-content:space-between;
+}
+
+div input, div select {
+  width:16em;
+}
+
+input[type="submit"] {
+  width:10em;
+  margin:10px auto;
+  height:2em;
+}
+
+form h3 {
+  text-align: center;
+  padding:5px 0px;
+}

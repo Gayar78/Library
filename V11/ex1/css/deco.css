@@ -1,0 +1,210 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a,
+.detailler,
+.supprimer,
+.modifier {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: all 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+nav a:hover,
+.detailler:hover,
+.supprimer:hover,
+.modifier:hover {
+    background-color: #555;
+    color: #ff6600;
+    transform: scale(1.1);
+}
+
+nav a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: all 0.3s ease;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #555;
+    color: #fff;
+}
+
+button, a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6600;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.detailler, .supprimer, .modifier {
+    margin-left: 10px;
+    transition: all 0.3s ease; /* Ajout de la transition pour les liens Detailler et Supprimer */
+}
+
+.detailler:hover {
+    color: rgb(51, 240, 51);
+    transform: scale(1.1);
+}
+
+.supprimer:hover {
+    color: rgb(253, 20, 3);
+    transform: scale(1.1);
+}
+
+.modifier:hover {
+    color: rgb(253, 178, 3);
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff6600;
+    transform: scale(1.05);
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    color: #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: all 0.3s ease;
+}
+
+nav a.active::before {
+    width: 100%;
+    left: 0;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
